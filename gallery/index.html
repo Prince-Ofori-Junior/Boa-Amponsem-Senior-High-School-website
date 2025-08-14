@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar with Home Button & Social Icons -->
+  <div class="top-bar">
+    <a href="index.html" class="home-btn">
+      <i class="fas fa-arrow-left"></i> Home
+    </a>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <header>
+    <h1>Photo Gallery</h1>
+  </header>
+
+  <section class="gallery">
+    <div class="gallery-item">
+      <img src="images.png" alt="Image 1" onclick="openModal(this)">
+    </div>
+    <div class="gallery-item">
+      <img src="My pic.jpg" alt="Image 2" onclick="openModal(this)">
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/600x400?text=Image+3" alt="Image 3" onclick="openModal(this)">
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/600x400?text=Image+4" alt="Image 4" onclick="openModal(this)">
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/600x400?text=Image+5" alt="Image 5" onclick="openModal(this)">
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/600x400?text=Image+6" alt="Image 6" onclick="openModal(this)">
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/600x400?text=Image+7" alt="Image 7" onclick="openModal(this)">
+    </div>
+    <div class="gallery-item">
+      <img src="mr Beast.jpg" alt="Image 8" onclick="openModal(this)">
+    </div>
+    <div class="gallery-item">
+      <img src="mr Beast.jpg" alt="Image 9" onclick="openModal(this)">
+    </div>
+  </section>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img" src=""/>
+  </div>
+
+  <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Boase. All Rights Reserved.</p>
+    </footer>
+
+  
+ <script src="index.js"></script>
+</body>
+</html>
